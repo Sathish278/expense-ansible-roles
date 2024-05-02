@@ -1,5 +1,7 @@
 - name: configure db server
   hosts: db
   become: yes
+  vars_files:
+  - vars
   roles:
   - db 
