@@ -1,3 +1,4 @@
+
 - name: disable default nodejs
   ansible.builtin.command: dnf module disable nodejs -y
 
@@ -24,7 +25,7 @@
 - name: install npm dependencies
   ansible.builtin.command: npm install
   args:
-    chdir: "app_location"
+    chdir: /app
 
 - name: copy backend service
   ansible.builtin.template:
