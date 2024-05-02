@@ -51,7 +51,7 @@
 
 - name: import data into mysql
   community.mysql.mysql_db:
-    login_user: {{login_host}}
+    login_user: "{{login_host}}"
     login_password: "{{ login_password }}"
     login_host: "{{ login_host }}"
     target: /app/schema/backend.sql
