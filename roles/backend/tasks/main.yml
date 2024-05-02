@@ -24,7 +24,7 @@
 - name: install npm dependencies
   ansible.builtin.command: npm install
   args:
-    chdir: /app
+    chdir: "app_location"
 
 - name: copy backend service
   ansible.builtin.template:
